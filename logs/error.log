@@ -1,0 +1,537 @@
+2018/08/06 16:44:27 [alert] 74413#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:14
+2018/08/06 17:25:49 [alert] 76062#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:14
+2018/08/06 17:26:26 [alert] 76096#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:14
+2018/08/06 17:26:26 [emerg] 76096#0: bind() to 0.0.0.0:7000 failed (48: Address already in use)
+2018/08/06 17:26:26 [emerg] 76096#0: bind() to 0.0.0.0:7000 failed (48: Address already in use)
+2018/08/06 17:26:26 [emerg] 76096#0: bind() to 0.0.0.0:7000 failed (48: Address already in use)
+2018/08/06 17:26:26 [emerg] 76096#0: bind() to 0.0.0.0:7000 failed (48: Address already in use)
+2018/08/06 17:26:26 [emerg] 76096#0: bind() to 0.0.0.0:7000 failed (48: Address already in use)
+2018/08/06 17:26:26 [emerg] 76096#0: still could not bind()
+2018/08/06 17:28:37 [alert] 76192#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:14
+2018/08/06 17:28:45 [alert] 76206#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:14
+2018/08/06 17:28:45 [emerg] 76206#0: bind() to 0.0.0.0:7000 failed (48: Address already in use)
+2018/08/06 17:28:45 [emerg] 76206#0: bind() to 0.0.0.0:7000 failed (48: Address already in use)
+2018/08/06 17:28:45 [emerg] 76206#0: bind() to 0.0.0.0:7000 failed (48: Address already in use)
+2018/08/06 17:28:45 [emerg] 76206#0: bind() to 0.0.0.0:7000 failed (48: Address already in use)
+2018/08/06 17:28:45 [emerg] 76206#0: bind() to 0.0.0.0:7000 failed (48: Address already in use)
+2018/08/06 17:28:45 [emerg] 76206#0: still could not bind()
+2018/08/06 17:46:57 [alert] 76899#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:14
+2018/08/06 17:55:00 [alert] 77216#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:14
+2018/08/06 17:56:36 [alert] 77287#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:14
+2018/08/06 17:57:41 [error] 77289#0: *3 open() "/Users/zhangbin/Desktop/open_resty_app/html/a" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "GET /a?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 18:04:49 [alert] 77604#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:14
+2018/08/06 18:09:55 [alert] 77801#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:14
+2018/08/06 18:10:00 [error] 77803#0: *1 attempt to set status 400 via ngx.exit after sending out the response status 200, client: 127.0.0.1, server: , request: "GET /api/a?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 18:10:19 [error] 77803#0: *1 attempt to set status 400 via ngx.exit after sending out the response status 200, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 18:10:52 [error] 77803#0: *1 attempt to set status 400 via ngx.exit after sending out the response status 200, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 18:10:54 [error] 77803#0: *1 attempt to set status 400 via ngx.exit after sending out the response status 200, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 18:12:00 [error] 77803#0: *1 lua entry thread aborted: runtime error: ...angbin/Desktop/open_resty_app//lua/comm/param_number.lua:17: bad argument #1 to 'log' (number expected, got string)
+stack traceback:
+coroutine 0:
+	[C]: in function 'log'
+	...angbin/Desktop/open_resty_app//lua/comm/param_number.lua:17: in function 'is_number'
+	/Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua:12: in function </Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 18:13:19 [error] 77803#0: *2 [lua] param_number.lua:17: is_number(): 10, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 18:13:19 [error] 77803#0: *2 [lua] param_number.lua:17: is_number(): 9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 18:13:19 [error] 77803#0: *2 attempt to set status 400 via ngx.exit after sending out the response status 200, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 18:14:03 [error] 77803#0: *2 [lua] param_number.lua:17: is_number(): false, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 18:14:03 [error] 77803#0: *2 [lua] param_number.lua:17: is_number(): false, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 18:14:03 [error] 77803#0: *2 attempt to set status 400 via ngx.exit after sending out the response status 200, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 18:15:23 [error] 77803#0: *3 attempt to set status 400 via ngx.exit after sending out the response status 200, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 18:15:24 [error] 77803#0: *3 attempt to set status 400 via ngx.exit after sending out the response status 200, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 18:38:21 [alert] 78865#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:13
+2018/08/06 19:55:13 [alert] 81691#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:13
+2018/08/06 19:55:52 [error] 81693#0: *1 lua entry thread aborted: runtime error: /Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua:10: module 'unified_log_process' not found:
+	no field package.preload['unified_log_process']
+	no file '/Users/zhangbin/Desktop/open_resty_app//lua/unified_log_process.lua'
+	no file '/usr/local/openresty/site/lualib/unified_log_process.ljbc'
+	no file '/usr/local/openresty/site/lualib/unified_log_process/init.ljbc'
+	no file '/usr/local/openresty/lualib/unified_log_process.ljbc'
+	no file '/usr/local/openresty/lualib/unified_log_process/init.ljbc'
+	no file '/usr/local/openresty/site/lualib/unified_log_process.lua'
+	no file '/usr/local/openresty/site/lualib/unified_log_process/init.lua'
+	no file '/usr/local/openresty/lualib/unified_log_process.lua'
+	no file '/usr/local/openresty/lualib/unified_log_process/init.lua'
+	no file './unified_log_process.lua'
+	no file '/usr/local/openresty/luajit/share/luajit-2.1.0-beta3/unified_log_process.lua'
+	no file '/usr/local/share/lua/5.1/unified_log_process.lua'
+	no file '/usr/local/share/lua/5.1/unified_log_process/init.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/unified_log_process.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/unified_log_process/init.lua'
+	no file '../lualib/unified_log_processlua'
+	no file '/usr/local/openresty/site/lualib/unified_log_process.so'
+	no file '/usr/local/openresty/lualib/unified_log_process.so'
+	no file './unified_log_process.so'
+	no file '/usr/local/lib/lua/5.1/unified_log_process.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/unified_log_process.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua:10: in function </Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 19:55:52 [error] 81693#0: *1 failed to run log_by_lua*: /Users/zhangbin/Desktop/open_resty_app/lua/log.lua:10: attempt to index global 'logger' (a nil value)
+stack traceback:
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:10: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 19:56:33 [error] 81693#0: *2 lua entry thread aborted: runtime error: /Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua:10: module 'unified_log_process' not found:
+	no field package.preload['unified_log_process']
+	no file '/Users/zhangbin/Desktop/open_resty_app//lua/unified_log_process.lua'
+	no file '/usr/local/openresty/site/lualib/unified_log_process.ljbc'
+	no file '/usr/local/openresty/site/lualib/unified_log_process/init.ljbc'
+	no file '/usr/local/openresty/lualib/unified_log_process.ljbc'
+	no file '/usr/local/openresty/lualib/unified_log_process/init.ljbc'
+	no file '/usr/local/openresty/site/lualib/unified_log_process.lua'
+	no file '/usr/local/openresty/site/lualib/unified_log_process/init.lua'
+	no file '/usr/local/openresty/lualib/unified_log_process.lua'
+	no file '/usr/local/openresty/lualib/unified_log_process/init.lua'
+	no file './unified_log_process.lua'
+	no file '/usr/local/openresty/luajit/share/luajit-2.1.0-beta3/unified_log_process.lua'
+	no file '/usr/local/share/lua/5.1/unified_log_process.lua'
+	no file '/usr/local/share/lua/5.1/unified_log_process/init.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/unified_log_process.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/unified_log_process/init.lua'
+	no file '../lualib/unified_log_process.lua'
+	no file '/usr/local/openresty/site/lualib/unified_log_process.so'
+	no file '/usr/local/openresty/lualib/unified_log_process.so'
+	no file './unified_log_process.so'
+	no file '/usr/local/lib/lua/5.1/unified_log_process.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/unified_log_process.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	/Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua:10: in function </Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 19:56:33 [error] 81693#0: *2 failed to run log_by_lua*: /Users/zhangbin/Desktop/open_resty_app/lua/log.lua:10: attempt to index global 'logger' (a nil value)
+stack traceback:
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:10: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 19:58:23 [alert] 81823#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:13
+2018/08/06 19:58:40 [error] 81825#0: *1 failed to run log_by_lua*: /Users/zhangbin/Desktop/open_resty_app/lua/log.lua:10: attempt to index global 'logger' (a nil value)
+stack traceback:
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:10: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:01:59 [error] 81825#0: *3 [lua] unified_log_process.lua:15: add(): ngx_log10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:01:59 [error] 81825#0: *3 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:25: bad argument #2 to 'log' (expected table to have __tostring metamethod)
+stack traceback:
+	[C]: in function 'log'
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:25: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:02:09 [error] 81825#0: *3 [lua] unified_log_process.lua:15: add(): ngx_log10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:02:09 [error] 81825#0: *3 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:25: bad argument #2 to 'log' (expected table to have __tostring metamethod)
+stack traceback:
+	[C]: in function 'log'
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:25: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:04:08 [error] 81825#0: *4 [lua] unified_log_process.lua:15: add(): 10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:04:21 [error] 81825#0: *4 [lua] unified_log_process.lua:15: add(): 10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:05:09 [error] 81825#0: *4 [lua] unified_log_process.lua:15: add(): nginx-log10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:05:52 [error] 81825#0: *4 [lua] unified_log_process.lua:15: add(): nginx-log-10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:05:52 [error] 81825#0: *4 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:25: bad argument #2 to 'log' (expected table to have __tostring metamethod)
+stack traceback:
+	[C]: in function 'log'
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:25: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:07:10 [error] 81825#0: *5 [lua] unified_log_process.lua:14: add(): nginx-log-10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:07:10 [error] 81825#0: *5 [lua] unified_log_process.lua:25: log(): nginx-log-nil while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:08:19 [error] 81825#0: *5 [lua] unified_log_process.lua:14: add(): nginx-log-10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:08:19 [error] 81825#0: *5 lua entry thread aborted: runtime error: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:18: attempt to get length of field 'logs' (a nil value)
+stack traceback:
+coroutine 0:
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua: in function 'add'
+	/Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua:13: in function </Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:08:19 [error] 81825#0: *5 [lua] unified_log_process.lua:25: log(): nginx-log-nil while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:09:04 [error] 81825#0: *6 [lua] unified_log_process.lua:14: add(): nginx-log-10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:09:04 [error] 81825#0: *6 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:26: bad argument #2 to 'log' (expected table to have __tostring metamethod)
+stack traceback:
+	[C]: in function 'log'
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:26: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:10:09 [error] 81825#0: *6 [lua] unified_log_process.lua:14: add(): nginx-log-10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:10:22 [error] 81825#0: *6 [lua] unified_log_process.lua:14: add(): nginx-log-10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:11:53 [error] 81825#0: *7 [lua] unified_log_process.lua:14: add(): nginx-log-10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:11:53 [error] 81825#0: *7 [lua] unified_log_process.lua:27: log(): 1 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:12:23 [error] 81825#0: *7 [lua] unified_log_process.lua:14: add(): nginx-log-10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:12:23 [error] 81825#0: *7 [lua] unified_log_process.lua:27: log(): 1 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:12:44 [error] 81825#0: *7 [lua] unified_log_process.lua:14: add(): nginx-log-10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:12:44 [error] 81825#0: *7 [lua] unified_log_process.lua:27: log(): 1 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:12:44 [error] 81825#0: *7 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:31: bad argument #1 to 'log' (number expected, got table)
+stack traceback:
+	[C]: in function 'log'
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:31: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:16:10 [error] 81825#0: *8 [lua] unified_log_process.lua:14: add(): nginx-log-10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:16:10 [error] 81825#0: *8 [lua] unified_log_process.lua:29: log(): 1 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:16:10 [error] 81825#0: *8 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:33: bad argument #1 to 'log' (number expected, got table)
+stack traceback:
+	[C]: in function 'log'
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:33: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:18:44 [error] 81825#0: *9 [lua] unified_log_process.lua:14: add(): nginx-log-10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:18:44 [error] 81825#0: *9 lua entry thread aborted: runtime error: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:19: bad argument #2 to 'log' (expected table to have __tostring metamethod)
+stack traceback:
+coroutine 0:
+	[C]: in function 'log'
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:19: in function 'add'
+	/Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua:13: in function </Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:18:44 [error] 81825#0: *9 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:30: attempt to get length of local 'logs' (a nil value)
+stack traceback:
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:30: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:18:54 [error] 81825#0: *10 [lua] unified_log_process.lua:14: add(): nginx-log-10-9, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:18:54 [error] 81825#0: *10 lua entry thread aborted: runtime error: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:19: bad argument #2 to 'log' (expected table to have __tostring metamethod)
+stack traceback:
+coroutine 0:
+	[C]: in function 'log'
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:19: in function 'add'
+	/Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua:13: in function </Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:18:54 [error] 81825#0: *10 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:30: attempt to get length of local 'logs' (a nil value)
+stack traceback:
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:30: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:37:08 [error] 81825#0: *11 [lua] unified_log_process.lua:28: log(): 2 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:37:08 [error] 81825#0: *11 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:36: attempt to concatenate local 'log_body' (a nil value)
+stack traceback:
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:36: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:37:14 [error] 81825#0: *11 [lua] unified_log_process.lua:28: log(): 2 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:37:14 [error] 81825#0: *11 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:36: attempt to concatenate local 'log_body' (a nil value)
+stack traceback:
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:36: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:38:10 [error] 81825#0: *11 [lua] unified_log_process.lua:28: log(): 2 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:38:10 [error] 81825#0: *11 [lua] unified_log_process.lua:40: log(): 10-9 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:38:10 [error] 81825#0: *11 [lua] unified_log_process.lua:40: log(): add-10-9 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:38:20 [error] 81825#0: *11 [lua] unified_log_process.lua:28: log(): 2 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:38:20 [error] 81825#0: *11 [lua] unified_log_process.lua:40: log(): 10-9 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:38:20 [error] 81825#0: *11 [lua] unified_log_process.lua:40: log(): add-10-9 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:38:58 [error] 81825#0: *11 [lua] unified_log_process.lua:28: log(): 2 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:38:58 [error] 81825#0: *11 [lua] unified_log_process.lua:40: log(): 10-9 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:38:58 [error] 81825#0: *11 [lua] unified_log_process.lua:40: log(): add-10-9 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:41:12 [error] 81825#0: *12 failed to run log_by_lua*: /Users/zhangbin/Desktop/open_resty_app/lua/log.lua:11: API disabled in the context of log_by_lua*
+stack traceback:
+	[C]: in function 'sleep'
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:54:15 [error] 81825#0: *13 failed to load external Lua file "/Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua": cannot open /Users/zhangbin/Desktop/open_resty_app/lua/access_check.lua: No such file or directory, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 20:54:15 [error] 81825#0: *13 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: attempt to get length of local 'logs' (a nil value)
+stack traceback:
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:06:45 [alert] 84327#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:13
+2018/08/06 21:06:49 [error] 84329#0: *1 lua entry thread aborted: runtime error: ...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: module 'test.param_number' not found:
+	no field package.preload['test.param_number']
+	no file '/Users/zhangbin/Desktop/open_resty_app//lua/test/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/test/param_number.ljbc'
+	no file '/usr/local/openresty/site/lualib/test/param_number/init.ljbc'
+	no file '/usr/local/openresty/lualib/test/param_number.ljbc'
+	no file '/usr/local/openresty/lualib/test/param_number/init.ljbc'
+	no file '/usr/local/openresty/site/lualib/test/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/test/param_number/init.lua'
+	no file '/usr/local/openresty/lualib/test/param_number.lua'
+	no file '/usr/local/openresty/lualib/test/param_number/init.lua'
+	no file './test/param_number.lua'
+	no file '/usr/local/openresty/luajit/share/luajit-2.1.0-beta3/test/param_number.lua'
+	no file '/usr/local/share/lua/5.1/test/param_number.lua'
+	no file '/usr/local/share/lua/5.1/test/param_number/init.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/test/param_number.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/test/param_number/init.lua'
+	no file '/Users/zhangbin/Desktop/open_resty_app//lualib/test/param_number.lua'
+	no file '../../lualib/test/param_number.lua'
+	no file '../comm'
+	no file '/usr/local/openresty/site/lualib/test/param_number.so'
+	no file '/usr/local/openresty/lualib/test/param_number.so'
+	no file './test/param_number.so'
+	no file '/usr/local/lib/lua/5.1/test/param_number.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/test/param_number.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file '/usr/local/openresty/site/lualib/test.so'
+	no file '/usr/local/openresty/lualib/test.so'
+	no file './test.so'
+	no file '/usr/local/lib/lua/5.1/test.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/test.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: in function <...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:06:49 [error] 84329#0: *1 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: attempt to get length of local 'logs' (a nil value)
+stack traceback:
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:08:02 [error] 84329#0: *2 lua entry thread aborted: runtime error: ...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: module 'test.param_number' not found:
+	no field package.preload['test.param_number']
+	no file '/Users/zhangbin/Desktop/open_resty_app//lua/test/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/test/param_number.ljbc'
+	no file '/usr/local/openresty/site/lualib/test/param_number/init.ljbc'
+	no file '/usr/local/openresty/lualib/test/param_number.ljbc'
+	no file '/usr/local/openresty/lualib/test/param_number/init.ljbc'
+	no file '/usr/local/openresty/site/lualib/test/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/test/param_number/init.lua'
+	no file '/usr/local/openresty/lualib/test/param_number.lua'
+	no file '/usr/local/openresty/lualib/test/param_number/init.lua'
+	no file './test/param_number.lua'
+	no file '/usr/local/openresty/luajit/share/luajit-2.1.0-beta3/test/param_number.lua'
+	no file '/usr/local/share/lua/5.1/test/param_number.lua'
+	no file '/usr/local/share/lua/5.1/test/param_number/init.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/test/param_number.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/test/param_number/init.lua'
+	no file '/Users/zhangbin/Desktop/open_resty_app//lualib/test/param_number.lua'
+	no file '../../lualib/test/param_number.lua'
+	no file '../comm'
+	no file '/usr/local/openresty/site/lualib/test/param_number.so'
+	no file '/usr/local/openresty/lualib/test/param_number.so'
+	no file './test/param_number.so'
+	no file '/usr/local/lib/lua/5.1/test/param_number.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/test/param_number.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file '/usr/local/openresty/site/lualib/test.so'
+	no file '/usr/local/openresty/lualib/test.so'
+	no file './test.so'
+	no file '/usr/local/lib/lua/5.1/test.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/test.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: in function <...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:08:02 [error] 84329#0: *2 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: attempt to get length of local 'logs' (a nil value)
+stack traceback:
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:08:08 [error] 84329#0: *3 lua entry thread aborted: runtime error: ...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: module 'test.param_number' not found:
+	no field package.preload['test.param_number']
+	no file '/Users/zhangbin/Desktop/open_resty_app//lua/test/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/test/param_number.ljbc'
+	no file '/usr/local/openresty/site/lualib/test/param_number/init.ljbc'
+	no file '/usr/local/openresty/lualib/test/param_number.ljbc'
+	no file '/usr/local/openresty/lualib/test/param_number/init.ljbc'
+	no file '/usr/local/openresty/site/lualib/test/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/test/param_number/init.lua'
+	no file '/usr/local/openresty/lualib/test/param_number.lua'
+	no file '/usr/local/openresty/lualib/test/param_number/init.lua'
+	no file './test/param_number.lua'
+	no file '/usr/local/openresty/luajit/share/luajit-2.1.0-beta3/test/param_number.lua'
+	no file '/usr/local/share/lua/5.1/test/param_number.lua'
+	no file '/usr/local/share/lua/5.1/test/param_number/init.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/test/param_number.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/test/param_number/init.lua'
+	no file '/Users/zhangbin/Desktop/open_resty_app//lualib/test/param_number.lua'
+	no file '../../lualib/test/param_number.lua'
+	no file '../comm'
+	no file '/usr/local/openresty/site/lualib/test/param_number.so'
+	no file '/usr/local/openresty/lualib/test/param_number.so'
+	no file './test/param_number.so'
+	no file '/usr/local/lib/lua/5.1/test/param_number.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/test/param_number.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+	no file '/usr/local/openresty/site/lualib/test.so'
+	no file '/usr/local/openresty/lualib/test.so'
+	no file './test.so'
+	no file '/usr/local/lib/lua/5.1/test.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/test.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: in function <...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:08:08 [error] 84329#0: *3 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: attempt to get length of local 'logs' (a nil value)
+stack traceback:
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:11:00 [error] 84329#0: *4 lua entry thread aborted: runtime error: ...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: module 'param_number' not found:
+	no field package.preload['param_number']
+	no file '/Users/zhangbin/Desktop/open_resty_app//lua/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/param_number.ljbc'
+	no file '/usr/local/openresty/site/lualib/param_number/init.ljbc'
+	no file '/usr/local/openresty/lualib/param_number.ljbc'
+	no file '/usr/local/openresty/lualib/param_number/init.ljbc'
+	no file '/usr/local/openresty/site/lualib/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/param_number/init.lua'
+	no file '/usr/local/openresty/lualib/param_number.lua'
+	no file '/usr/local/openresty/lualib/param_number/init.lua'
+	no file './param_number.lua'
+	no file '/usr/local/openresty/luajit/share/luajit-2.1.0-beta3/param_number.lua'
+	no file '/usr/local/share/lua/5.1/param_number.lua'
+	no file '/usr/local/share/lua/5.1/param_number/init.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/param_number.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/param_number/init.lua'
+	no file '/Users/zhangbin/Desktop/open_resty_app//lualib/param_number.lua'
+	no file '../../lualib/param_number.lua'
+	no file '../comm/test'
+	no file '/usr/local/openresty/site/lualib/param_number.so'
+	no file '/usr/local/openresty/lualib/param_number.so'
+	no file './param_number.so'
+	no file '/usr/local/lib/lua/5.1/param_number.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/param_number.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: in function <...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:11:00 [error] 84329#0: *4 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: attempt to get length of local 'logs' (a nil value)
+stack traceback:
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:11:45 [error] 84329#0: *5 lua entry thread aborted: runtime error: ...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: module 'param_number' not found:
+	no field package.preload['param_number']
+	no file '/Users/zhangbin/Desktop/open_resty_app//lua/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/param_number.ljbc'
+	no file '/usr/local/openresty/site/lualib/param_number/init.ljbc'
+	no file '/usr/local/openresty/lualib/param_number.ljbc'
+	no file '/usr/local/openresty/lualib/param_number/init.ljbc'
+	no file '/usr/local/openresty/site/lualib/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/param_number/init.lua'
+	no file '/usr/local/openresty/lualib/param_number.lua'
+	no file '/usr/local/openresty/lualib/param_number/init.lua'
+	no file './param_number.lua'
+	no file '/usr/local/openresty/luajit/share/luajit-2.1.0-beta3/param_number.lua'
+	no file '/usr/local/share/lua/5.1/param_number.lua'
+	no file '/usr/local/share/lua/5.1/param_number/init.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/param_number.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/param_number/init.lua'
+	no file '/Users/zhangbin/Desktop/open_resty_app//lualib/param_number.lua'
+	no file '../../lualib/param_number.lua'
+	no file '../../comm/test'
+	no file '/usr/local/openresty/site/lualib/param_number.so'
+	no file '/usr/local/openresty/lualib/param_number.so'
+	no file './param_number.so'
+	no file '/usr/local/lib/lua/5.1/param_number.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/param_number.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: in function <...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:11:45 [error] 84329#0: *5 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: attempt to get length of local 'logs' (a nil value)
+stack traceback:
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:12:02 [error] 84329#0: *6 lua entry thread aborted: runtime error: ...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: module 'param_number' not found:
+	no field package.preload['param_number']
+	no file '/Users/zhangbin/Desktop/open_resty_app//lua/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/param_number.ljbc'
+	no file '/usr/local/openresty/site/lualib/param_number/init.ljbc'
+	no file '/usr/local/openresty/lualib/param_number.ljbc'
+	no file '/usr/local/openresty/lualib/param_number/init.ljbc'
+	no file '/usr/local/openresty/site/lualib/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/param_number/init.lua'
+	no file '/usr/local/openresty/lualib/param_number.lua'
+	no file '/usr/local/openresty/lualib/param_number/init.lua'
+	no file './param_number.lua'
+	no file '/usr/local/openresty/luajit/share/luajit-2.1.0-beta3/param_number.lua'
+	no file '/usr/local/share/lua/5.1/param_number.lua'
+	no file '/usr/local/share/lua/5.1/param_number/init.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/param_number.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/param_number/init.lua'
+	no file '/Users/zhangbin/Desktop/open_resty_app//lualib/param_number.lua'
+	no file '../../lualib/param_number.lua'
+	no file '../../comm/test'
+	no file '/usr/local/openresty/site/lualib/param_number.so'
+	no file '/usr/local/openresty/lualib/param_number.so'
+	no file './param_number.so'
+	no file '/usr/local/lib/lua/5.1/param_number.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/param_number.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: in function <...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:12:02 [error] 84329#0: *6 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: attempt to get length of local 'logs' (a nil value)
+stack traceback:
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:12:41 [error] 84329#0: *7 lua entry thread aborted: runtime error: ...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: module 'param_number' not found:
+	no field package.preload['param_number']
+	no file '/Users/zhangbin/Desktop/open_resty_app//lua/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/param_number.ljbc'
+	no file '/usr/local/openresty/site/lualib/param_number/init.ljbc'
+	no file '/usr/local/openresty/lualib/param_number.ljbc'
+	no file '/usr/local/openresty/lualib/param_number/init.ljbc'
+	no file '/usr/local/openresty/site/lualib/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/param_number/init.lua'
+	no file '/usr/local/openresty/lualib/param_number.lua'
+	no file '/usr/local/openresty/lualib/param_number/init.lua'
+	no file './param_number.lua'
+	no file '/usr/local/openresty/luajit/share/luajit-2.1.0-beta3/param_number.lua'
+	no file '/usr/local/share/lua/5.1/param_number.lua'
+	no file '/usr/local/share/lua/5.1/param_number/init.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/param_number.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/param_number/init.lua'
+	no file '/Users/zhangbin/Desktop/open_resty_app//lualib/param_number.lua'
+	no file '../../lualib/param_number.lua'
+	no file '../comm/test'
+	no file '/usr/local/openresty/site/lualib/param_number.so'
+	no file '/usr/local/openresty/lualib/param_number.so'
+	no file './param_number.so'
+	no file '/usr/local/lib/lua/5.1/param_number.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/param_number.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: in function <...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:12:41 [error] 84329#0: *7 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: attempt to get length of local 'logs' (a nil value)
+stack traceback:
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:14:41 [alert] 84627#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:13
+2018/08/06 21:14:46 [error] 84629#0: *1 lua entry thread aborted: runtime error: error loading module 'param_number' from file '/Users/zhangbin/Desktop/open_resty_app//lua/':
+	cannot read /Users/zhangbin/Desktop/open_resty_app//lua/: Is a directory
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: in function <...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:14:46 [error] 84629#0: *1 failed to run log_by_lua*: error loading module 'unified_log_process' from file '/Users/zhangbin/Desktop/open_resty_app//lua/':
+	cannot read /Users/zhangbin/Desktop/open_resty_app//lua/: Is a directory
+stack traceback:
+	[C]: at 0x0110308710
+	[C]: in function 'require'
+	/Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:10: in function </Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:14:59 [error] 84629#0: *2 lua entry thread aborted: runtime error: error loading module 'param_number' from file '/Users/zhangbin/Desktop/open_resty_app//lua/':
+	cannot read /Users/zhangbin/Desktop/open_resty_app//lua/: Is a directory
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: in function <...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:14:59 [error] 84629#0: *2 failed to run log_by_lua*: error loading module 'unified_log_process' from file '/Users/zhangbin/Desktop/open_resty_app//lua/':
+	cannot read /Users/zhangbin/Desktop/open_resty_app//lua/: Is a directory
+stack traceback:
+	[C]: at 0x0110308710
+	[C]: in function 'require'
+	/Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:10: in function </Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:18:07 [alert] 84763#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:13
+2018/08/06 21:18:30 [error] 84765#0: *1 lua entry thread aborted: runtime error: ...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: module 'param_number' not found:
+	no field package.preload['param_number']
+	no file '/Users/zhangbin/Desktop/open_resty_app//lua/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/param_number.ljbc'
+	no file '/usr/local/openresty/site/lualib/param_number/init.ljbc'
+	no file '/usr/local/openresty/lualib/param_number.ljbc'
+	no file '/usr/local/openresty/lualib/param_number/init.ljbc'
+	no file '/usr/local/openresty/site/lualib/param_number.lua'
+	no file '/usr/local/openresty/site/lualib/param_number/init.lua'
+	no file '/usr/local/openresty/lualib/param_number.lua'
+	no file '/usr/local/openresty/lualib/param_number/init.lua'
+	no file './param_number.lua'
+	no file '/usr/local/openresty/luajit/share/luajit-2.1.0-beta3/param_number.lua'
+	no file '/usr/local/share/lua/5.1/param_number.lua'
+	no file '/usr/local/share/lua/5.1/param_number/init.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/param_number.lua'
+	no file '/usr/local/openresty/luajit/share/lua/5.1/param_number/init.lua'
+	no file '/Users/zhangbin/Desktop/open_resty_app//lua/param_number.lua'
+	no file '/Users/zhangbin/Desktop/open_resty_app//lualib/param_number.lua'
+	no file '../../lualib/param_number.lua'
+	no file '../comm/test'
+	no file '/usr/local/openresty/site/lualib/param_number.so'
+	no file '/usr/local/openresty/lualib/param_number.so'
+	no file './param_number.so'
+	no file '/usr/local/lib/lua/5.1/param_number.so'
+	no file '/usr/local/openresty/luajit/lib/lua/5.1/param_number.so'
+	no file '/usr/local/lib/lua/5.1/loadall.so'
+stack traceback:
+coroutine 0:
+	[C]: in function 'require'
+	...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:9: in function <...ngbin/Desktop/open_resty_app/lua/access/access_check.lua:1>, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:18:30 [error] 84765#0: *1 failed to run log_by_lua*: ...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: attempt to get length of local 'logs' (a nil value)
+stack traceback:
+	...n/Desktop/open_resty_app//lualib/unified_log_process.lua:28: in function 'log'
+	/Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:11: in function </Users/zhangbin/Desktop/open_resty_app/lua/comm/log.lua:1> while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:22:51 [alert] 84945#0: lua_code_cache is off; this will hurt performance in /Users/zhangbin/Desktop/open_resty_app/conf/nginx.conf:13
+2018/08/06 21:22:54 [error] 84947#0: *1 [lua] unified_log_process.lua:28: log(): 2 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:22:54 [error] 84947#0: *1 [lua] unified_log_process.lua:40: log(): 10-9 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
+2018/08/06 21:22:54 [error] 84947#0: *1 [lua] unified_log_process.lua:40: log(): add-10-9 while logging request, client: 127.0.0.1, server: , request: "GET /api/add?a=10&b=9 HTTP/1.1", host: "localhost:7000"
